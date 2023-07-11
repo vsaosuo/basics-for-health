@@ -11,7 +11,7 @@ const ehrClientID = process.env.REACT_APP_EHR_CLIENT_ID
 const ehrClientSecret = process.env.REACT_APP_EHR_CLIENT_SECRET
 
 const smartFhirLaunch = () => {
-  console.log("REACT_APP_EHR_CLIENT_ID: ", ehrClientID, " REACT_APP_EHR_CLIENT_SECRET: ", ehrClientSecret);
+  console.log("REACT_APP_EHR_CLIENT_ID: ", ehrClientID, " REACT_APP_EHR_CLIENT_SECRET: ", ehrClientSecret, " Running!");
   FHIR.oauth2.init({
     clientId: ehrClientID,
     clientSecret: ehrClientSecret,
